@@ -1,0 +1,166 @@
+{
+    "users" : [
+        {
+            "id": 1,
+            "name": "Paing Thu Htwe",
+            "about": "I'm passionate web developer.",
+            "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer.",
+            "age": 19,
+            "phone": "+ 959 780 909 574",
+            "email": "paingthuhtwe.official@gmail.com",
+            "address": "Zayya Waddy St, Sanchaung Tsp, Yangon",
+            "image_url": "https://lh3.google.com/u/0/d/1Xgfrk8yszY6pG6flVIJGBo16hwXUzGur=w3360-h950-iv1",
+            "cv_url": "http://myprofile.com.mm",
+            "skills":[
+                { "id": 1, "name": "HTML", "skill": 75 },
+                { "id": 2, "name": "CSS", "skill": 75 },
+                { "id": 3, "name": "Bootstrap", "skill": 75 },
+                { "id": 4, "name": "Tailwind CSS", "skill": 50 },
+                { "id": 5, "name": "JavaScript", "skill": 50 },
+                { "id": 6, "name": "Vuejs", "skill": 50 },
+                { "id": 7, "name": "PHP", "skill": 75 },
+                { "id": 8, "name": "Laravel", "skill": 75 },
+                { "id": 9, "name": "MySql", "skill": 50 },
+                { "id": 10, "name": "Firebase", "skill": 50 },
+                { "id": 11, "name": "API", "skill": 50 },
+                { "id": 12, "name": "Git & GitHub", "skill": 50 }
+              ],
+            "qualifications": [
+                {
+                    "id": 1,
+                    "name": "Certificate in Professional Web Developer",
+                    "slug": "certificate-in-web-developer",
+                    "image_url": "https://lh3.google.com/u/0/d/1TYutxgKYuLio1Ag0uT4qNFNY9QtkVMrI=w3360-h950-iv1"
+                },
+                {
+                    "id": 2,
+                    "name": "Certificate in Vuejs + Firebase Course",
+                    "slug": "certificate-in-vuejs+firebase-course",
+                    "image_url": "PWDC.jpg"
+                },
+                {
+                    "id": 3,
+                    "name": "Certificate in Programming Basic Course",
+                    "slug": "certificate-in-programming-basic-course",
+                    "image_url": "https://lh3.google.com/u/0/d/1HZilepVxqFcrH-1OoojdGbqHAaUYZvgz=w3360-h950-iv1"
+                },
+                {
+                    "id": 4,
+                    "name": "Certificate in Computer Basic",
+                    "slug": "certificate-in-computer-basic",
+                    "image_url": "https://lh3.google.com/u/0/d/17l2yVdmVCInRs05oNyCWIgigq9ewEXSA=w3360-h950-iv1"
+                },
+                {
+                    "id": 5,
+                    "name": "Finished High School",
+                    "slug": "finished-high-school",
+                    "image_url": "https://lh3.google.com/u/0/d/1JuomTIbVIdenwSyn2LLGz2fd_CPqBqXh=w3360-h950-iv1"
+                },
+                {
+                    "id": 6,
+                    "name": "Certificate in Pearson LCCI Level-2",
+                    "slug": "certificate-in-pearson+lcci-level-2",
+                    "image_url": "https://lh3.google.com/u/0/d/1SHFTyLa5iOqKXAc1u4b8F8cSa5bGMTje=w3360-h950-iv1"
+                },
+                {
+                    "id": 7,
+                    "name": "Certificate in LCCI Level-2",
+                    "slug": "certificate-in-lcci-level-2",
+                    "image_url": "https://lh3.google.com/u/0/d/1eZjvoy64fjriOS9nnWaLn2JqSu1dfaMu=w3360-h950-iv1"
+                },
+                {
+                    "id": 8,
+                    "name": "Certificate in LCCI Level-1",
+                    "slug": "certificate-in-lcci-level-1",
+                    "image_url": "https://lh3.google.com/u/0/d/1PUieOS3TU4toZFnnF9iExRkbxn6kt3Xr=w2038-h1942-iv1"
+                },
+                {
+                    "id": 9,
+                    "name": "Certificate in MYOB Accounting Software",
+                    "slug": "certificate-in-myob-accounting-software",
+                    "image_url": "https://lh3.google.com/u/0/d/1xDrjQRrpvDSRO3z-os0Vc7WefRrF6JUm=w3360-h950-iv1"
+                },
+                {
+                    "id": 10,
+                    "name": "Certificate in English Public Speaking Workshop",
+                    "slug": "certificate-in-english-public-speaking-workshop",
+                    "image_url": "https://lh3.google.com/u/0/d/1k9HqxyXyjQ38g7Vs2nbgyR4Tlw0oyTMq=w3360-h950-iv1"
+                }
+            ],
+            "projects":[
+                {
+                    "id": 1,
+                    "name": "Mini Shop (Pure PHP)",
+                    "slug": "mini-shop-pure-php",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1WJ3CIppnSkPsY_HLYIxZs3V8E7v5TC4-=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 2,
+                    "name": "Blog Page (Laravel)",
+                    "slug": "blog-page-laravel",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1T_8yL_HWHJ2Y18AZEdXHzJ82QPotsosP=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 3,
+                    "name": "Blog Page (Vuejs)",
+                    "slug": "blog-page-vuejs",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1S29FGqSKqPI2XH3NLkXDAsAb0neaKEvS=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 4,
+                    "name": "Live Chat Group (Vuejs)",
+                    "slug": "live-chat-group-vuejs",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1wbkwC4qCC0cfLPWBYy3vTbfOm77br9tS=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 5,
+                    "name": "Fairway Page (Bootstrap)",
+                    "slug": "fairway-page-bootstrap",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81p0s4q621PyOf82kgBmMFiCMsdpWtxoHqNuNzWhODtm2N0OWqdWPk8vJSc00CYOPwtSHZI0p-WNbWn7-Q_fLJne_otwMw=w3360-h1942",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 6,
+                    "name": "Remote Desktop (Bootstrap)",
+                    "slug": "remote-desktop-bootstrap",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1I1EX2VY7mJabnn6mQw2lD9YTZ5Jk2IeF=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 7,
+                    "name": "Slack (Bootstrap)",
+                    "slug": "slack-bootstrap",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1J7cigvBb8Ohk66m_l5oPptmKYB4HzEu0=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 8,
+                    "name": "Instagram Redesign (Bootstrap)",
+                    "slug": "instagram-redesign-bootstrap",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.googleusercontent.com/u/0/drive-viewer/AFGJ81pXdRedtf94ekqcclRjlkAArrrVVFO8qGlz6nryF4LxKguOVZklXCjqZImdwwPQjch6m_mbuTQiaq-yp8rI8c9rADxtRQ=w3360-h1942",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                },
+                {
+                    "id": 9,
+                    "name": "Portfolio UI (Bootstrap)",
+                    "slug": "portfolio-ui-bootstrap",
+                    "project_url": "http://myproject.com.mm",
+                    "image_url": "https://lh3.google.com/u/0/d/1s8TuQ_4SOJhNwpPz0ip-lVZ1WLPgwYmW=w3360-h752-iv1",
+                    "description": "I am a junior web developer with experience in HTML, CSS, JavaScript, Vuejs, TailwindCss, Bootstrap, PHP, MySQL, Laravel, API, Git & GitHub. My portfolio showcases my skills and coding style through recent projects. I am eager to take on new challenges and collaborate with others to continue growing as a developer."
+                }
+            ]
+        }
+    ]
+}
