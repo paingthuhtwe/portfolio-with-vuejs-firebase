@@ -7,9 +7,9 @@ export default {};
 </script>
 
 <style>
-#app {
+body {
   background: rgb(0, 56, 70) !important;
-  position: relative;
+  /* position: relative; */
 }
 .bg {
   position: absolute;

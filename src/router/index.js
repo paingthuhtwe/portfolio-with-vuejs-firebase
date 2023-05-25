@@ -13,6 +13,12 @@ const routes = [
     component: () => import("@/components/ProjectDetail.vue"),
     props: true,
   },
+  {
+    path: "/dashboard",
+    name: "dashboard",
+    component: () => import("@/views/DashBoard.vue"),
+    props: true,
+  },
 ];
 
 const router = createRouter({
