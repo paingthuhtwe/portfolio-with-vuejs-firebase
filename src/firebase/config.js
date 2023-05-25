@@ -5,6 +5,7 @@ import {
   getStorage,
   ref as storageReference,
   uploadBytes,
+  getDownloadURL,
 } from "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -24,4 +25,12 @@ let auth = firebase.auth();
 let timestamp = firebase.firestore.FieldValue.serverTimestamp;
 let storage = getStorage(app);
 
-export { db, auth, timestamp, storage, storageReference, uploadBytes };
+export {
+  db,
+  auth,
+  timestamp,
+  storage,
+  storageReference,
+  uploadBytes,
+  getDownloadURL,
+};
