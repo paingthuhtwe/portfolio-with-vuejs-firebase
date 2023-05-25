@@ -7,6 +7,12 @@ const routes = [
     name: "home",
     component: HomeView,
   },
+  {
+    path: "/project-detail/:id/:slug",
+    name: "project.detail",
+    component: () => import("@/components/ProjectDetail.vue"),
+    props: true,
+  },
 ];
 
 const router = createRouter({

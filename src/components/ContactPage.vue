@@ -3,12 +3,12 @@
     class="d-flex flex-column justify-content-center align-items-center"
     style="height: 90vh"
   >
-    <div>
-      <h1 class="text-center text-danger name">{{ user.name }}</h1>
+    <div class="index">
+      <h1 class="text-center text-danger name">Paing Thu Htwe</h1>
     </div>
-    <div class="">
+    <div class="index">
       <p class="text-center text-white my-4" id="passion">
-        {{ user.about.toUpperCase() }}
+        I'm PASSIONATE WEB DEVELOPER.
       </p>
     </div>
     <div class="d-flex justify-content-center align-items-center icons gap-2">
@@ -72,10 +72,11 @@
 </template>
 
 <script>
-export default {
-  props: ["user"],
-};
+export default {};
 </script>
 
 <style>
+.index {
+  z-index: 1;
+}
 </style>

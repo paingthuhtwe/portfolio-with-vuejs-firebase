@@ -1,28 +1,30 @@
 <template>
-  <ContactPage :user="userData"></ContactPage>
-  <AboutPage :user="userData"></AboutPage>
-  <SkillsPage :skills="userData.skills"></SkillsPage>
-  <ProjectPage :projects="userData.projects"></ProjectPage>
-  <QualificationPage
-    :qualifications="userData.qualifications"
-  ></QualificationPage>
+  <NavBar></NavBar>
+  <div class="container">
+    <AboutPage :user="userData"></AboutPage>
+    <SkillsPage :skills="userData.skills"></SkillsPage>
+    <ProjectPage :projects="userData.projects"></ProjectPage>
+    <QualificationPage
+      :qualifications="userData.qualifications"
+    ></QualificationPage>
+  </div>
 </template>
 
 <script>
+import NavBar from "../components/NavBar";
 import QualificationPage from "../components/QualificationPage";
 import ProjectPage from "../components/ProjectPage";
 import SkillsPage from "../components/SkillsPage";
 import AboutPage from "../components/AboutPage";
-import ContactPage from "../components/ContactPage";
 import getUserData from "../composables/getUserData";
 
 export default {
   components: {
+    NavBar,
     QualificationPage,
     ProjectPage,
     SkillsPage,
     AboutPage,
-    ContactPage,
   },
   setup() {
     const { userData } = getUserData();

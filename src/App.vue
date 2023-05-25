@@ -1,19 +1,20 @@
 <template>
-  <div class="container">
-    <NavBar></NavBar>
-    <router-view />
-  </div>
+  <router-view />
 </template>
 
 <script>
-import NavBar from "./components/NavBar.vue";
-export default {
-  components: { NavBar },
-};
+export default {};
 </script>
 
 <style>
-body {
-  background: rgb(0, 64, 80) !important;
+#app {
+  background: rgb(0, 56, 70) !important;
+  position: relative;
+}
+.bg {
+  position: absolute;
+  min-height: 100vh;
+  width: 100%;
+  background: rgb(0, 34, 26);
 }
 </style>

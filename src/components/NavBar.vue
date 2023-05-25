@@ -1,5 +1,6 @@
 <template>
-  <nav class="navbar navbar-expand-lg bg-nav mx-md-5 mt-3" id="home">
+  <div class="bg"></div>
+  <nav class="navbar navbar-expand-lg bg-nav mx-md-5 py-4" id="home">
     <a class="navbar-brand text-white" href="#">Portfolio</a>
     <button
       class="navbar-toggler"
@@ -16,11 +17,11 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item items-center px-md-3">
-          <a
+          <router-link
             class="nav-link text-light active bnav"
             aria-current="page"
-            href="#"
-            >Home</a
+            to="/"
+            >Home</router-link
           >
         </li>
         <li class="nav-item items-center px-md-3">
@@ -44,10 +45,14 @@
       </ul>
     </div>
   </nav>
+  <ContactPage></ContactPage>
 </template>
 
 <script>
-export default {};
+import ContactPage from "./ContactPage.vue";
+export default {
+  components: { ContactPage },
+};
 </script>
 
 <style>

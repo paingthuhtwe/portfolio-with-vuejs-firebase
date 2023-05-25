@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4 mb-3">
+  <div class="row mt-4 mb-3" id="about">
     <div
       class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
       style="height: 460px"
