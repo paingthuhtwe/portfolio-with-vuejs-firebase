@@ -5,8 +5,8 @@
   <div class="message alert alert-danger" v-if="error">
     {{ error }}
   </div>
-  <form class="p-3 mx-auto bg-light rounded-2" @submit.prevent="add">
-    <h1 class="mt-2 mb-3 text-center h3">Add Qualification</h1>
+  <form class="p-3 mx-auto alert alert-primary" @submit.prevent="add">
+    <h1 class="mt-2 mb-3 text-center h3">Add Qualifications</h1>
     <!-- for name -->
     <label for="name">Qualification Name</label>
     <input
