@@ -4,8 +4,8 @@
       <div class="col-12 col-md-6 mb-3">
         <AddQualification></AddQualification>
       </div>
-      <div class="col-12 col-md-6 mb-3"><AddProject></AddProject></div>
       <div class="col-12 col-md-6 mb-3"><AddSkill></AddSkill></div>
+      <div class="col-12 col-md-6 mb-3"><AddProject></AddProject></div>
     </div>
   </div>
 </template>
