@@ -81,7 +81,7 @@ export default {
         info: info.value,
       };
       let res = await addDoc(doc);
-      await addFile(file.value.files[0].name);
+      await addFile(file.value.files[0]);
       res
         ? (message.value = "Successfully your process!")
         : (error.value = "Can't reach your process");

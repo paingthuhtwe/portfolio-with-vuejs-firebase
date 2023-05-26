@@ -3,7 +3,7 @@
     <h2 class="text-center text-white my-3">PROGRAMMING SKILLS</h2>
     <div
       class="col-6 col-md-4 col-lg-3 px-2 py-0"
-      v-for="skill in skills"
+      v-for="skill in data"
       :key="skill.id"
     >
       <div class="alert alert-info sBottom">
@@ -20,8 +20,13 @@
 </template>
 
 <script>
+import getDoc from "@/composables/getDoc";
+
 export default {
-  props: ["skills"],
+  setup() {
+    let { data, error } = getDoc("skills");
+    return { data, error };
+  },
 };
 </script>
 

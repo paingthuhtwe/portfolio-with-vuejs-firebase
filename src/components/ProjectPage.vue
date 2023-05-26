@@ -3,19 +3,13 @@
   <div class="row">
     <div
       class="col-12 col-md-4 px-2 py-0"
-      v-for="project in projects"
-      :key="project.id"
+      v-for="project in data"
+      :key="project"
     >
       <div class="card bg-gray mb-3">
         <div class="card-body p-2">
-          <router-link
-            :to="{
-              name: 'project.detail',
-              params: { id: project.id, slug: project.slug },
-            }"
-            class="decoration-none"
-          >
-            <img :src="project.image_url" alt="" class="card-img" />
+          <router-link to="/" class="decoration-none">
+            <ProjectPhoto :image="project.image"></ProjectPhoto>
             <div class="card-title h6 mt-2 mb-1 text-center text-white project">
               {{ project.name }}
             </div>
@@ -27,8 +21,16 @@
 </template>
 
 <script>
+import ProjectPhoto from "./ProjectPhoto";
+import getDoc from "@/composables/getDoc";
+
 export default {
-  props: ["projects"],
+  components: { ProjectPhoto },
+  setup() {
+    let { data, error } = getDoc("projects");
+
+    return { data, error };
+  },
 };
 </script>
 

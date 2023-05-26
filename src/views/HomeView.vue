@@ -2,8 +2,8 @@
   <NavBar></NavBar>
   <div class="container">
     <AboutPage :user="userData"></AboutPage>
-    <SkillsPage :skills="userData.skills"></SkillsPage>
-    <ProjectPage :projects="userData.projects"></ProjectPage>
+    <SkillsPage></SkillsPage>
+    <ProjectPage></ProjectPage>
     <QualificationPage
       :qualifications="userData.qualifications"
     ></QualificationPage>
