@@ -3,26 +3,30 @@
   <div class="row mt-3">
     <div
       class="col-12 col-md-6 col-lg-4 mb-4"
-      v-for="qualification in qualifications"
-      :key="qualification.id"
+      v-for="qualification in data"
+      :key="qualification.name"
     >
       <div class="card bg-gray text-white hScale p-2 m-0">
         <div class="card-title text-center">
           {{ qualification.name }}
         </div>
-        <img
-          :src="qualification.image_url"
-          alt=""
-          class="card-img border shadow-sm"
-        />
+        <QualificationPhoto :image="qualification.image"></QualificationPhoto>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import QualificationPhoto from "./QualificationPhoto";
+import getDoc from "@/composables/getDoc";
+
 export default {
-  props: ["qualifications"],
+  components: { QualificationPhoto },
+  setup() {
+    let { data } = getDoc("qualifications");
+
+    return { data };
+  },
 };
 </script>
 

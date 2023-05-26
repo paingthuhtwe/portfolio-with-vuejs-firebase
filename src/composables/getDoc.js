@@ -7,7 +7,7 @@ let getDoc = (path) => {
   //   get data from firebase
   try {
     db.collection(path)
-      //   .orderBy("id", "desc")
+      .orderBy("id", "asc")
       .onSnapshot((snap) => {
         data.value = snap.docs.map((doc) => {
           return { id: doc.id, ...doc.data() };

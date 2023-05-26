@@ -16,6 +16,15 @@
       class="form-control mb-3"
       required
     />
+    <!-- for number -->
+    <label for="number">Project ID</label>
+    <input
+      type="number"
+      id="number"
+      v-model="number"
+      class="form-control mb-3"
+      required
+    />
     <!-- for direct or not for not found url -->
     <label for="direct">URL Direct</label>
     <select id="direct" v-model="direct" class="form-select mb-3">
@@ -67,6 +76,7 @@ export default {
     let message = ref("");
     let direct = ref("1");
     let info = ref("");
+    let number = ref();
 
     let { error, addDoc } = useCollection("projects");
 
@@ -79,6 +89,7 @@ export default {
         image: file.value.files[0].name,
         direct: direct.value,
         info: info.value,
+        id: number.value,
       };
       let res = await addDoc(doc);
       await addFile(file.value.files[0]);
@@ -100,7 +111,17 @@ export default {
       }, 2000);
     });
 
-    return { name, project_url, file, direct, info, error, message, add };
+    return {
+      name,
+      project_url,
+      file,
+      direct,
+      info,
+      error,
+      message,
+      add,
+      number,
+    };
   },
 };
 </script>

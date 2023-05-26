@@ -16,6 +16,15 @@
       class="form-control mb-3"
       required
     />
+    <!-- for number -->
+    <label for="number">Qualification ID</label>
+    <input
+      type="number"
+      id="number"
+      v-model="number"
+      class="form-control mb-3"
+      required
+    />
     <!-- for file  -->
     <label for="file">Qualification Photo</label>
     <input
@@ -40,6 +49,7 @@ export default {
     let name = ref("");
     let file = ref("");
     let message = ref("");
+    let number = ref();
 
     let { error, addDoc } = useCollection("qualifications");
 
@@ -49,10 +59,11 @@ export default {
       let doc = {
         name: name.value,
         image: file.value.files[0].name,
+        id: number.value,
       };
       if (name.value && file.value) {
-        let res = addDoc(doc);
-        let img = addFile(file.value.files[0].name);
+        addDoc(doc);
+        addFile(file.value.files[0]);
         message.value = "Successfully your process!";
         name.value = "";
       }
@@ -63,7 +74,7 @@ export default {
         message.value = "";
       }, 1000);
     });
-    return { name, file, error, add, message };
+    return { name, file, error, add, message, number };
   },
 };
 </script>

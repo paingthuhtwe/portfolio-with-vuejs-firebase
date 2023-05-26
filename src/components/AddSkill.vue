@@ -16,6 +16,15 @@
       class="form-control mb-3"
       required
     />
+    <!-- for number -->
+    <label for="number">Skill ID</label>
+    <input
+      type="number"
+      id="number"
+      v-model="number"
+      class="form-control mb-3"
+      required
+    />
     <!-- for skill level  -->
     <label for="skill">Select your skill level</label>
     <select id="skill" v-model="skill" class="form-select mb-3">
@@ -37,11 +46,12 @@ export default {
     let skill = ref(25);
     let name = ref("");
     let message = ref("");
+    let number = ref();
 
     let { error, addDoc } = useCollection("skills");
 
     let add = async () => {
-      let doc = { name: name.value, skill: skill.value };
+      let doc = { name: name.value, skill: skill.value, id: number.value };
       if (name.value) {
         await addDoc(doc);
         message.value = "Successfully your process";
@@ -57,7 +67,7 @@ export default {
       }, 2000);
     });
 
-    return { skill, error, name, add, message };
+    return { skill, error, name, add, message, number };
   },
 };
 </script>
