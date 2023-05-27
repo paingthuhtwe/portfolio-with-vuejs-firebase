@@ -1,6 +1,6 @@
 <template>
   <div class="bg"></div>
-  <nav class="navbar navbar-expand-lg bg-nav mx-md-5 py-4" id="home">
+  <nav class="navbar navbar-expand-lg bg-nav mx-md-5 px-3 py-4" id="home">
     <a class="navbar-brand text-white" href="#">Portfolio</a>
     <button
       class="navbar-toggler"

@@ -4,9 +4,7 @@
     <AboutPage :user="userData"></AboutPage>
     <SkillsPage></SkillsPage>
     <ProjectPage></ProjectPage>
-    <QualificationPage
-      :qualifications="userData.qualifications"
-    ></QualificationPage>
+    <QualificationPage></QualificationPage>
   </div>
 </template>
 

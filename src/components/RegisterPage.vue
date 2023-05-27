@@ -1,12 +1,12 @@
 <template>
-  <div class="alert alert-primary" style="max-width: 540px">
+  <div class="alert alert-primary mx-auto my-5" style="max-width: 540px">
     <form @submit.prevent="add">
       <div>
         <h1 class="mt-3 mb-4 text-center h5">
           Submit your email to view 'My Qualifications'.
         </h1>
       </div>
-      <div class="input-group mx-auto" style="max-width: 400px">
+      <div class="input-group mx-auto mb-3" style="max-width: 400px">
         <input
           type="email"
           class="form-control"
@@ -14,12 +14,6 @@
           placeholder="Enter your email in here"
         />
         <input type="submit" value="" class="btn btn-primary" />
-      </div>
-      <div>
-        <h1 class="mt-3 text-center h6">
-          Are you already submitted?
-          <router-link to="/">Enter from Here</router-link>
-        </h1>
       </div>
     </form>
   </div>

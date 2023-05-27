@@ -1,7 +1,9 @@
 <template>
   <div class="container py-5">
-    <RegisterPage></RegisterPage>
-    <div class="row">
+    <div v-if="!user">
+      <RegisterPage></RegisterPage>
+    </div>
+    <div class="row" v-if="user">
       <div class="col-12 col-md-6 mb-3">
         <AddQualification></AddQualification>
       </div>
@@ -16,12 +18,20 @@ import RegisterPage from "../components/RegisterPage";
 import AddSkill from "../components/AddSkill";
 import AddProject from "../components/AddProject";
 import AddQualification from "../components/AddQualification";
+import getUser from "../composables/getUser";
+
 export default {
   components: {
     RegisterPage,
     AddSkill,
     AddProject,
     AddQualification,
+  },
+
+  setup() {
+    let { user } = getUser();
+
+    return { user };
   },
 };
 </script>

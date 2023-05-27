@@ -7,8 +7,8 @@
       <img
         class="sBottom"
         style="width: 320px"
-        src="https://lh3.google.com/u/0/d/1Xgfrk8yszY6pG6flVIJGBo16hwXUzGur=w3360-h950-iv1"
-        alt=""
+        :src="img_url"
+        :alt="user.image"
       />
     </div>
     <div
@@ -84,8 +84,22 @@
 </template>
 
 <script>
+import { storage, storageReference, getDownloadURL } from "@/firebase/config";
+import { onMounted, ref } from "vue";
+
 export default {
   props: ["user"],
+  setup(props) {
+    let img_url = ref();
+
+    onMounted(async () => {
+      const storageRef = storageReference(storage, `user/${props.user.image}`);
+      let res = await getDownloadURL(storageRef);
+      img_url.value = res;
+    });
+
+    return { img_url };
+  },
 };
 </script>
 
