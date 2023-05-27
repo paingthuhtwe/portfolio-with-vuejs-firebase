@@ -8,7 +8,7 @@
     </div>
     <div class="index">
       <p class="text-center text-white my-4" id="passion">
-        I'm PASSIONATE WEB DEVELOPER.
+        I'M PASSIONATE WEB DEVELOPER.
       </p>
     </div>
     <div class="d-flex justify-content-center align-items-center icons gap-2">

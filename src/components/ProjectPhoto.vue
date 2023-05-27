@@ -1,5 +1,5 @@
 <template>
-  <img :src="img_url" class="card-img" :alt="url" />
+  <img :src="img_url" class="card-img" :alt="image" />
 </template>
 
 <script>

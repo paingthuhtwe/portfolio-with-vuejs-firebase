@@ -15,7 +15,7 @@
         v-for="usage in project.usages"
         :key="usage"
       >
-        <img :src="usage" alt="" class="img-thumbnail shadow-sm" />
+        <ProjectPhoto :image="usage"></ProjectPhoto>
       </div>
     </div>
     <div class="alert alert-info border border-danger" id="description">
@@ -43,10 +43,12 @@
 </template>
 
 <script>
+import ProjectPhoto from "./ProjectPhoto";
 import getUserData from "@/composables/getUserData";
 import { onMounted, ref } from "vue";
 
 export default {
+  components: { ProjectPhoto },
   props: {
     id: { type: String, requierd: true },
     slug: { type: String, required: true },
@@ -55,8 +57,6 @@ export default {
     let { userData } = getUserData();
 
     let project = ref(null);
-
-    console.log(userData.projects);
 
     onMounted(() => {
       project.value = userData.projects.find(

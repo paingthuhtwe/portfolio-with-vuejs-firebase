@@ -1,7 +1,7 @@
 <template>
   <div class="row mt-4 mb-3" id="about">
     <div
-      class="col-12 col-lg-6 d-flex justify-content-center align-items-center"
+      class="col-12 col-lg-6 d-flex justify-content-center align-items-center mb-5"
       style="height: 460px"
     >
       <img
@@ -35,7 +35,10 @@
           <span class="row">
             <span class="col-3 text-white"><b>Age</b> </span
             ><span class="col-9 text-secondary"
-              >: <span class="hColor">19</span></span
+              >:
+              <span class="hColor">
+                {{ user.age }}
+              </span></span
             >
           </span>
         </li>
@@ -52,7 +55,7 @@
             <span class="col-3 text-white"><b>Phone</b> </span
             ><span class="col-9 text-secondary"
               >:
-              <a href="tel:+959780909574" class="hColor">{{
+              <a :href="`tel:${user.phone}`" class="hColor">{{
                 user.phone
               }}</a></span
             >
@@ -63,7 +66,7 @@
             <span class="col-3 text-white"><b>Email</b> </span
             ><span class="col-9 text-secondary"
               >:
-              <a href="mailto:paingthuhtwe.official@gmail.com" class="hColor">{{
+              <a :href="`mailto:${user.email}`" class="hColor">{{
                 user.email
               }}</a></span
             >
