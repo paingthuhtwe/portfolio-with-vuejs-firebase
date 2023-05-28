@@ -1,7 +1,7 @@
 <template>
   <div
     class="d-flex flex-column justify-content-center align-items-center"
-    style="height: 90vh"
+    style="height: 75vh"
   >
     <div class="index">
       <h1 class="text-center text-danger name">Paing Thu Htwe</h1>
