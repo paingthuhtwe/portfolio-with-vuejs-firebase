@@ -75,7 +75,7 @@
       </ul>
       <div>
         <a
-          :href="user.cv_url"
+          href="https://firebasestorage.googleapis.com/v0/b/paingthuhtwe-portfolio.appspot.com/o/user%2FPaingThuHtwe_CV.pdf?alt=media&token=007b8d2d-a8bc-4f55-a20e-c4de20264a21"
           download
           class="btn btn-danger rounded-5 px-4 py-2 mt-3"
         >
